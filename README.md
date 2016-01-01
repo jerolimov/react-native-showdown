@@ -1,4 +1,4 @@
-# react-showdown [![Dependency Status][dependency-image]][dependency-url]
+# react-native-showdown [![Dependency Status][dependency-image]][dependency-url]
 
 > [React-native](http://facebook.github.io/react-native/) component which renders markdown into a webview!
 
