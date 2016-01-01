@@ -2,4 +2,5 @@
 /.gitignore
 /node_modules
 /coverage
+/examples
 *.log

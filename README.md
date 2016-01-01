@@ -21,9 +21,11 @@ Really simple markdown example with ES6/JSX:
 ```jsx
 import Markdown from 'react-native-showdown';
 
-render: () => {
-    var markdown = '# Hello\n\nMore content...';
-    return <Markdown body={ markdown } />
+class Example extends Component {
+    render() {
+        var markdown = '# Welcome to React Native!\n\nMore content...';
+        return <Markdown body={ markdown } />
+    }
 }
 ```
 
@@ -34,6 +36,16 @@ render: () => {
 * `pureCSS` String, optional, pure CSS which will be used to style the webview content.
 * `automaticallyAdjustContentInsets` Bool, optional, see [ScrollView#automaticallyAdjustContentInsets](http://facebook.github.io/react-native/docs/scrollview.html#automaticallyadjustcontentinsets)
 * `style` mixed, optional (default `{ flex: 1 }`), see [View#style](http://facebook.github.io/react-native/docs/view.html#style)
+
+### Run the example
+
+```bash
+git clone https://github.com/jerolimov/react-native-showdown.git
+cd react-native-showdown/examples
+npm install
+```
+
+Run the react-native project like any react-native project.
 
 ### Credits
 
