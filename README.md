@@ -1,4 +1,4 @@
-# react-showdown [![Build status][travis-image]][travis-url] [![Test coverage][coveralls-image]][coveralls-url] [![Dependency Status][dependency-image]][dependency-url]
+# react-showdown <!--[![Build status][travis-image]][travis-url] [![Test coverage][coveralls-image]][coveralls-url]--> [![Dependency Status][dependency-image]][dependency-url]
 
 > [React-native](http://facebook.github.io/react-native/) component which renders markdown into a webview!
 
@@ -29,12 +29,11 @@ render: () => {
 
 ### Available props / converter options
 
-Converter options will be pushed forward to the showdown converter, please
-checkout the [valid options section](https://github.com/showdownjs/showdown#valid-options).
-
-Just the `components` option is managed by this converter.
-It define the component name (tag name) to component React class definition
-(instance of React.createClass) mapping. See example above.
+* `title` String, optional, plain text which will be used for the title, normally not shown, so you can skip this.
+* `body` String, required, markdown body which will be shown as webview content.
+* `pureCSS` String, optional, pure CSS which will be used to style the webview content.
+* `automaticallyAdjustContentInsets` Bool, optional, see [ScrollView#automaticallyAdjustContentInsets](http://facebook.github.io/react-native/docs/scrollview.html#automaticallyadjustcontentinsets)
+* `style` mixed, optional (default `{ flex: 1 }`), see [View#style](http://facebook.github.io/react-native/docs/view.html#style)
 
 ### Credits
 
