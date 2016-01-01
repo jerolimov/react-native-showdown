@@ -2,7 +2,7 @@
   "name": "react-native-showdown",
   "version": "0.1.0",
   "description": "React-native component which renders markdown into a webview!",
-  "main": "lib/index.js",
+  "main": "lib/MarkdownView.js",
   "scripts": {
     "lint": "eslint lib tests",
     "test": "true",
