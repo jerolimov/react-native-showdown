@@ -1,0 +1,42 @@
+{
+  "name": "react-native-showdown",
+  "version": "0.1.0",
+  "description": "React-native component which renders markdown into a webview!",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib tests",
+    "test": "true",
+    "_test": "mocha --recursive",
+    "_coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --recursive"
+  },
+  "author": "Christoph Jerolimov",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerolimov/react-native-showdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jerolimov/react-native-showdown/issues"
+  },
+  "homepage": "https://github.com/jerolimov/react-native-showdown#readme",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "android",
+    "ios",
+    "markdown",
+    "showdown"
+  ],
+  "dependencies": {
+    "showdown": "^1.3.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.12"
+  }
+}
