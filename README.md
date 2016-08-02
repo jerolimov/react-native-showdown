@@ -36,6 +36,7 @@ class Example extends Component {
 * `pureCSS` String, optional, pure CSS which will be used to style the webview content.
 * `automaticallyAdjustContentInsets` Bool, optional, see [ScrollView#automaticallyAdjustContentInsets](http://facebook.github.io/react-native/docs/scrollview.html#automaticallyadjustcontentinsets)
 * `style` mixed, optional (default `{ flex: 1 }`), see [View#style](http://facebook.github.io/react-native/docs/view.html#style)
+* `options` Object, optional (default `{simplifiedAutoLink: true, strikethrough: true, tables: true}`), see [Showdown#options](https://github.com/showdownjs/showdown#valid-options)
 
 ### Run the example
 
