@@ -28,6 +28,7 @@
     "showdown"
   ],
   "dependencies": {
+    "prop-types": "^15.6.0",
     "showdown": "^1.3.0"
   },
   "devDependencies": {
