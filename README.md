@@ -104,6 +104,8 @@ yarn android
 
 Project is based on the markdown parser [Showdown](https://github.com/showdownjs/showdown).
 
+Project build setup created with [@react-native-community/bob](https://github.com/react-native-community/bob)
+
 ## License
 
 MIT License
