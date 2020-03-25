@@ -77,6 +77,8 @@ code { font-size: 1.2rem; background-color: lightgray; }
 * `css` String, optional;
   CSS which will be used to style the webview content.
   (Previous prop `pureCSS` is also still supported as fallback.)
+* `title` String, optional;
+  Sets the HTML title tag.
 * `options` ConverterOptions, optional;
   All [Showdown#options](https://github.com/showdownjs/showdown#valid-options). 
   Default is `{simplifiedAutoLink: true, strikethrough: true, tables: true}`.

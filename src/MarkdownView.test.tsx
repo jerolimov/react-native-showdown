@@ -13,6 +13,11 @@ describe('MarkdownView', () => {
     return html;
   };
 
+  it('renders title', () => {
+    const html = renderHTML({ title: 'A title', markdown: '' });
+    expect(html).toMatch('<title>A title</title>');
+  });
+
   it('renders default markdown', () => {
     const markdown = '# Headline level 1!\n\nAnother paragraph.\n\n';
     const html = renderHTML({ markdown });

@@ -5,6 +5,7 @@ import { Converter, ConverterOptions } from 'showdown';
 import defaultHTML from './defaultHTML';
 
 export interface MarkdownViewProps extends WebViewProps {
+  title?: string;
   markdown: string;
   body?: string;
   css?: string;
@@ -13,6 +14,7 @@ export interface MarkdownViewProps extends WebViewProps {
 }
 
 export default function MarkdownView({
+  title,
   markdown,
   body,
   css,
@@ -28,7 +30,7 @@ export default function MarkdownView({
   };
 
   const html = defaultHTML
-    .replace('$title', '')
+    .replace('$title', title || '')
     .replace('$body', new Converter(options).makeHtml(markdown || body || ''))
     .replace('$pureCSS', css || pureCSS || '');
 
