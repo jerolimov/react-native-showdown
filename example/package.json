@@ -1,0 +1,23 @@
+{
+  "name": "react-native-showdown-example",
+  "description": "Example app for react-native-showdown",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "react-native": "react-native",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "react-native-webview": "^9.0.1",
+    "showdown": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "metro-react-native-babel-preset": "^0.58.0"
+  }
+}

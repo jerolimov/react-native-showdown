@@ -1,0 +1,6 @@
+rootProject.name = 'ShowdownExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':reactnativeshowdown'
+project(':reactnativeshowdown').projectDir = new File(rootProject.projectDir, '../../android')
