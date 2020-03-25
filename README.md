@@ -6,11 +6,13 @@ Since version 1.0.0 it requires the peer dependency [react-native-webview](https
 
 ## Features
 
-* Pure JavaScript implementation. No native code required. (No react-native link.)
-* Renders Markdown into a react-native WebView component.
+* Renders Markdown into a React Native WebView component.
+* Pure JavaScript implementation, based on [Showdown](https://github.com/showdownjs/showdown),
+  extendable with all (?) [Showdown Extensions](https://github.com/showdownjs/showdown/wiki/Extensions).
+* No native code / No react-native link required.
 * Customizable with CSS.
 * Full TypeScript Support.
-* ~~Automatically opens links in the system browser.~~
+* ~~Automatically opens links in the system browser.~~ Supports all React Native WebView props and callbacks!
 
 ## Installation
 
@@ -24,9 +26,18 @@ or
 yarn add react-native-showdown react-native-webview
 ```
 
+With expo you are done.
+
+With a pure React Native project you need to link react-native-webview:
+
+```bash
+react-native link react-native-webview
+cd pods && pod install && cd ..
+```
+
 ## Usage
 
-Full markdown example with ES6/JSX or TypeScript:
+Full ES6 / TypeScript example:
 
 ```jsx
 import React from 'react';
@@ -60,10 +71,18 @@ code { font-size: 1.2rem; background-color: lightgray; }
 
 ## Available props / converter options
 
-* `markdown` String, required, markdown body which will be shown as webview content.
-* `css` String, optional, CSS which will be used to style the webview content.
-* All other [react-native-webview](https://github.com/react-native-community/react-native-webview) props.
-* `options` Object, optional (default `{simplifiedAutoLink: true, strikethrough: true, tables: true}`), see [Showdown#options](https://github.com/showdownjs/showdown#valid-options)
+* `markdown` String, required;
+  Markdown string which will be shown as webview content.
+  (Previous prop `body` is also still supported as fallback.)
+* `css` String, optional;
+  CSS which will be used to style the webview content.
+  (Previous prop `pureCSS` is also still supported as fallback.)
+* `options` ConverterOptions, optional;
+  All [Showdown#options](https://github.com/showdownjs/showdown#valid-options). 
+  Default is `{simplifiedAutoLink: true, strikethrough: true, tables: true}`.
+* All other [react-native-webview](https://github.com/react-native-community/react-native-webview)
+  [props](https://github.com/react-native-community/react-native-webview/blob/master/docs/Reference.md#props-index) and callbacks are also supported, expect the `source` prop!
+* Notice that the WebView has a default `{ flex: 1 }` style defined.
 
 ## Run the example
 
@@ -81,6 +100,30 @@ yarn android
 ## Credits
 
 Project is based on the markdown parser [Showdown](https://github.com/showdownjs/showdown).
+
+## License
+
+MIT License
+
+Copyright (c) 2016-2020 Christoph Jerolimov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Alternatives
 
