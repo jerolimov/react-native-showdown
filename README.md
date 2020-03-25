@@ -12,6 +12,7 @@ Since version 1.0.0 it requires the peer dependency [react-native-webview](https
 * No native code / No react-native link required.
 * Customizable with CSS.
 * Full TypeScript Support.
+* Fully tested. 100% Code Coverage.
 * ~~Automatically opens links in the system browser.~~ Supports all React Native WebView props and callbacks!
 
 ## Installation
@@ -135,9 +136,5 @@ Libraries that renders Markdown as native components instead of using a WebView:
 * [react-native-markdown](https://github.com/lwansbrough/react-native-markdown)
 * [react-native-htmlview](https://github.com/jsdf/react-native-htmlview)
 
-[travis-image]: https://img.shields.io/travis/jerolimov/react-native-showdown/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/jerolimov/react-native-showdown
-[coveralls-image]: https://img.shields.io/coveralls/jerolimov/react-native-showdown/master.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/jerolimov/react-native-showdown
 [dependency-image]: http://img.shields.io/david/jerolimov/react-native-showdown.svg?style=flat-square
 [dependency-url]: https://david-dm.org/jerolimov/react-native-showdown
