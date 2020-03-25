@@ -22,6 +22,7 @@
   },
   "keywords": [
     "react-native",
+    "react-native-webview",
     "react-component",
     "markdown",
     "showdown",
@@ -106,8 +107,8 @@
   },
   "release-it": {
     "git": {
-      "commitMessage": "chore: release %s",
-      "tagName": "v%s"
+      "commitMessage": "Release build %s",
+      "tagName": "%s"
     },
     "npm": {
       "publish": true
