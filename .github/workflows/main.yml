@@ -23,13 +23,16 @@ jobs:
             nodeModules-
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
 
       - name: Lint
         run: yarn lint
 
+      - name: TypeScript
+        run: yarn typescript
+
       - name: Test
-        run: yarn test -- --ci --coverage --maxWorkers=2
+        run: yarn test --coverage
 
       - name: Build
-        run: yarn run build
+        run: yarn prepare
